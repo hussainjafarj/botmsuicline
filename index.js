@@ -52,23 +52,6 @@ i18n.configure({
   }
 });
 
-///ممنوع السرقة 
-client.login("OTkwMzMyODU4ODE0MDY2NzI5.G0lKau.xN_vJiyeDAe8V3j6BmIfwqitcxSket83zVnf9k"); ///توكن هنا
-
-client.on("ready", () => {
-  client.user.setActivity(``)//غير الحالة الي تريد
-});
-
-client.on("message", async message => {
- 
-  if (message.guild.id != "929497213674082304" ) return;
-  if (message.channel.id != "948592282242809856") return;    
-  if(message.author.id === client.user.id) return;
-      if (message.author.send) {
-    message.channel.send({files: ["https://cdn.discordapp.com/attachments/916668502109196328/948898483153293362/5cfece8f1d8d345e.png"]});
- 
-  }
- 
 });
 client.on('message', message => {
   if (message.content === 'خط') {
